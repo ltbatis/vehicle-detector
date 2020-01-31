@@ -7,4 +7,4 @@ The vehicle video file is in the Data folder.
 I like computer vision very much and hope this is the first of many works.
 
 
-[see code: ](https://github.com/user/repo/blob/branch/other_file.md)
+[see code](https://github.com/ltbatista/vehicle-detector/blob/master/main.py)
