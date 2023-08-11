@@ -22,19 +22,16 @@ while(True):
 
     _, contours, h = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
-    #cv2.drawContours(frame, contours, -1, (255,0,0), 3)
 
     for cnt in contours:
         area =cv2.contourArea(cnt)
         #print(area)
 
         if area > 500:
-            #cv2.drawContours(frame, cnt, -1, (255,0,0), 3)
             x,y,w,h = cv2.boundingRect(cnt)
             cv2.rectangle(frame,(x,y), (x+w, y+h), (0,255,0), 2)
 
     cv2.imshow('frame', frame)
-    #cv2.imshow('mask', mask)
 
     
 
